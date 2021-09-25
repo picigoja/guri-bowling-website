@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    font-family: "Arial", serif;
+}
+
+.title {
+    margin: 80px 0 50px 80px;
+    font-size: 30px;
+}
+
+.description {
+    margin: 0 15% 80px 15%;
+    font-size: 20px;
+}
+
+.field {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #DFDFDF;
+}
+
+#headline {
+    background-color: #424B54;
+    font-size: 20px;
+    position: fixed;
+    margin-top: -80px;
+}
+
+#logo {
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    min-width: max-content;
+}
+
+#logo p {
+    width: max-content;
+    color: #DFDFDF;
+}
+
+#head_buttons {
+    margin: 0 20px 20px 0;
+    align-self: flex-end;
+    min-width: max-content;
+}
+
+#head_buttons a {
+    color: #DFDFDF;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+#introduction {
+    /*background-image: url("/static/img/stock-pizza-1280.jpg");
+    height: 767px;*/
+    margin-top: 80px;
+    background-color: #1F1F1F;
+    align-items: center;
+}
+
+#welcome_headline {
+    font-size: 30px;
+    margin: 80px 20% 0 0;
+    width: max-content;
+}
+
+#open_headline {
+    font-size: 40px;
+    margin: 20px 0 40px 30%;
+    width: max-content;
+}
+
+#welcome_text {
+    font-size: 25px;
+    margin-top: 30px;
+    width: max-content;
+}
+
+#open_text {
+    margin: 80px 0 80px 0;
+    color: #EC6265;
+    font-size: 20px;
+    width: max-content;
+}
+
+#prices {
+    background-color: #424B54;
+}
+
+#small_title {
+    font-size: 25px;
+    margin: 50px 0 30px 0;
+}
+
+.prices_dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+#services {
+    background-color: #1F1F1F;
+}
+
+#reservation {
+    height: 100px;
+    background-color: #424B54;
+}
+
+#contact {
+    height: 100px;
+    background-color: #1F1F1F;
+}
+
+#what_is_bowling {
+    background-color: #424B54;
+}
+
+#bottomline {
+    background-color: #DFDFDF;
+    color: #1F1F1F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+#bottomline p {
+    margin: 0 20px 0 20px;
+}
