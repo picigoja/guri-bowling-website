@@ -1,135 +1,239 @@
 * {
-    margin: 0;
-    font-family: "Arial", serif;
+    --background-color-1: #424B54;
+    --text-color: #EFEFEF;
+    --alt-color: #BF0505;
 }
 
-.title {
-    margin: 80px 0 50px 80px;
-    font-size: 30px;
+@media only screen and (min-width: 810px) {
+
+    * {
+        background-color: #2f2f2f;
+        color: var(--text-color);
+        margin: 0;
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    }
+
+    .title {
+        margin: 80px 0 50px 80px;
+        font-size: 40px;
+    }
+
+    .description {
+        margin: 0 15% 80px 15%;
+        font-size: 30px;
+    }
+
+    .field {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        width: 100%;
+        border-bottom: solid var(--alt-color) 3px;
+    }
+
+    #headline {
+        position: sticky;
+        top: 0;
+        z-index: 0;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0 10px 10px;
+
+    }
+
+    #logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    #logo p {
+        width: max-content;
+    }
+
+    #head_buttons {
+        margin: 0 2% 0 0;
+        width: max-content;
+    }
+
+    #head_buttons a:hover {
+        padding-bottom: 0.3rem;
+        border-bottom: solid var(--alt-color) 3px;
+    }
+
+    #head_buttons a {
+        text-decoration: none;
+        margin: 0 10px 0 10px;
+        font-weight: lighter;
+    }
+
+    #introduction {
+        align-items: center;
+    }
+
+    #introduction img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #welcome_headline {
+        font-size: 30px;
+        margin: 80px 20% 0 0;
+        width: max-content;
+    }
+
+    #open_headline {
+        font-size: 40px;
+        margin: 20px 0 40px 30%;
+        width: max-content;
+    }
+
+    #welcome_text {
+        font-size: 25px;
+        margin-top: 30px;
+        width: max-content;
+    }
+
+    #open_text {
+        margin: 80px 0 80px 0;
+        width: max-content;
+    }
+
+    #open_text p {
+        color: var(--alt-color);
+        font-size: 25px;
+    }
+
+    #prices {
+        /*background-color: var(--background-color-1);*/
+    }
+
+    #small_title {
+        font-size: 25px;
+        margin: 50px 0 30px 0;
+    }
+
+    .prices_dates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+
+    #services {
+        /*background-color: var(--background-color-2);*/
+    }
+
+    #reservation {
+        /*background-color: var(--background-color-1);*/
+        min-height: 400px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #reservation iframe {
+        align-self: center;
+        width: 600px;
+        height: 600px;
+        margin-bottom: 80px;
+    }
+
+    #reservation #contacts {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /*margin: 80px 0 80px 0;*/
+        width: 100%;
+        min-width: max-content;
+        margin: 80px 0 80px 0;
+    }
+
+    #reservation p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 25%;
+    }
+
+    #reservation a {
+        text-decoration: none;
+        border: solid var(--alt-color) 2px;
+        border-radius: 3rem;
+        padding: 0.75rem 0.75rem;
+        width: max-content;
+    }
+
+    #maps iframe {
+        width: inherit;
+        height: 600px;
+    }
+
+    #what_is_bowling {
+        /*background-color: var(--background-color-1);*/
+    }
+
+    #bottomline {
+        background-color: #DFDFDF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+
+    }
+
+    #bottomline p {
+        margin: 0 20px 0 20px;
+        color: #1F1F1F;
+        background: none;
+        text-shadow: none;
+    }
+
 }
 
-.description {
-    margin: 0 15% 80px 15%;
-    font-size: 20px;
-}
+@media only screen and (max-width: 810px) {
 
-.field {
-    height: max-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    color: #DFDFDF;
-}
+    * {
+        background-color: #2f2f2f;
+        color: var(--text-color);
+        margin: 0;
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    }
 
-#headline {
-    background-color: #424B54;
-    font-size: 20px;
-    position: fixed;
-    margin-top: -80px;
-}
+    .title {
+        margin: 80px 0 50px 80px;
+        font-size: 20px;
+    }
 
-#logo {
-    align-self: flex-start;
-    margin-left: 20px;
-    margin-top: 20px;
-    min-width: max-content;
-}
+    .description {
+        margin: 0 15% 80px 15%;
+        font-size: 15px;
+    }
 
-#logo p {
-    width: max-content;
-    color: #DFDFDF;
-}
+    .field {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        width: 100%;
+        border-bottom: solid var(--alt-color) 3px;
+    }
 
-#head_buttons {
-    margin: 0 20px 20px 0;
-    align-self: flex-end;
-    min-width: max-content;
-}
+    #logo img {
+        width: 75px;
+        height: auto;
+    }
 
-#head_buttons a {
-    color: #DFDFDF;
-    margin: 0 10px 0 10px;
-    text-decoration: none;
-}
-
-#introduction {
-    /*background-image: url("/static/img/stock-pizza-1280.jpg");
-    height: 767px;*/
-    margin-top: 80px;
-    background-color: #1F1F1F;
-    align-items: center;
-}
-
-#welcome_headline {
-    font-size: 30px;
-    margin: 80px 20% 0 0;
-    width: max-content;
-}
-
-#open_headline {
-    font-size: 40px;
-    margin: 20px 0 40px 30%;
-    width: max-content;
-}
-
-#welcome_text {
-    font-size: 25px;
-    margin-top: 30px;
-    width: max-content;
-}
-
-#open_text {
-    margin: 80px 0 80px 0;
-    color: #EC6265;
-    font-size: 20px;
-    width: max-content;
-}
-
-#prices {
-    background-color: #424B54;
-}
-
-#small_title {
-    font-size: 25px;
-    margin: 50px 0 30px 0;
-}
-
-.prices_dates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 600px;
-    margin-bottom: 20px;
-}
-
-#services {
-    background-color: #1F1F1F;
-}
-
-#reservation {
-    height: 100px;
-    background-color: #424B54;
-}
-
-#contact {
-    height: 100px;
-    background-color: #1F1F1F;
-}
-
-#what_is_bowling {
-    background-color: #424B54;
-}
-
-#bottomline {
-    background-color: #DFDFDF;
-    color: #1F1F1F;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-}
-
-#bottomline p {
-    margin: 0 20px 0 20px;
 }
