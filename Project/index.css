@@ -1,0 +1,140 @@
+@media only screen and (min-width: 810px) {
+    * {
+        font-size: 30px;
+    }
+
+    .field {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 30px;
+        margin: 0 15% 80px 15%;
+    }
+
+        html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    * {
+        font-size: 20px;
+    }
+
+    .field {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description{
+        font-size: 20px;
+        margin: 0 15% 80px 15%;
+    }
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    --alt-color: #BF0505;
+    --text-color: #EEE;
+    --background-color: #333;
+}
+
+.field {
+    width: 100%;
+    border-bottom: solid var(--alt-color) 2px;
+    height: max-content;
+}
+
+.title {
+    margin: 80px 0 50px 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 10px 0 10px 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.button {
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    font-weight: lighter;
+}
+
+.button:hover {
+    padding-bottom: 0.3rem;
+    border-bottom: solid var(--alt-color) 3px;
+    }
+
+.footer {
+    margin: 20px 20px 20px 20px;
+    text-shadow: none;
+    font-size: 20px;
+}
+
+iframe {
+    width: inherit;
+    height: 500px;
+    border: 0;
+}
+
+.mainframe {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.table_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallery_img{
+    width: 500px;
+    height: auto;
+}
+
+.gallery_field{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_element {
+    height: max-content;
+    margin: 10px 10px 10px 10px;
+}
