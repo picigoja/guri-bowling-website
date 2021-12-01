@@ -16,10 +16,10 @@
         margin: 0 15% 80px 15%;
     }
 
-        html{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     body {
@@ -40,7 +40,7 @@
         font-size: 25px;
     }
 
-    .description{
+    .description {
         font-size: 20px;
         margin: 0 15% 80px 15%;
     }
@@ -55,11 +55,16 @@
     --alt-color: #BF0505;
     --text-color: #EEE;
     --background-color: #333;
+    --c_red: #BF0505;
+    --c_red2: #880101;
+    --c_white: #EEE;
+    --c_gray: #333;
+    letter-spacing: 0.1rem;
 }
 
 .field {
     width: 100%;
-    border-bottom: solid var(--alt-color) 2px;
+    border-bottom: solid var(--alt-color) 3px;
     height: max-content;
 }
 
@@ -93,7 +98,7 @@
 .button:hover {
     padding-bottom: 0.3rem;
     border-bottom: solid var(--alt-color) 3px;
-    }
+}
 
 .footer {
     margin: 20px 20px 20px 20px;
@@ -121,12 +126,12 @@ iframe {
     margin-bottom: 20px;
 }
 
-.gallery_img{
+.gallery_img {
     width: 500px;
     height: auto;
 }
 
-.gallery_field{
+.gallery_field {
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -140,15 +145,60 @@ iframe {
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.dropbtn {
+    color: var(--c_red);
+    background-color: var(--c_gray);
+    padding: 16px;
+    font-size: 50px;
+    border: none;
+    text-shadow: 2px 2px 3px var(--c_gray);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-bottom: solid var(--c_red) 3px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 5px;
+}
+
+.dropdown-content a {
+    color: var(--c_white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.1rem;
+    font-size: 25px;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--c_red2);
 }

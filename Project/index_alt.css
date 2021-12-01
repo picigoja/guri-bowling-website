@@ -1,0 +1,97 @@
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    --c_red: #BF0505;
+    --c_red2: #880101;
+    --c_white: #EEE;
+    --c_gray: #333;
+
+    background-color: var(--c_gray);
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    width: 75%;
+}
+
+.logo img {
+    height: auto;
+    width: 125px;
+}
+
+.logo {
+    margin: 10px;
+    width: max-content;
+}
+
+#header {
+    border-bottom: solid 3px var(--c_red);
+    background-color: var(--c_gray);
+    color: var(--c_white);
+    padding: 10px 16px;
+}
+
+.dropbtn {
+    color: var(--c_red);
+    background-color: var(--c_gray);
+    padding: 16px;
+    font-size: 50px;
+    border: none;
+    text-shadow: 2px 2px 3px var(--c_gray);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--c_white);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.1rem;
+    font-size: 25px;
+}
+
+.dropdown-content a:hover {
+    background-color: #CCC;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--c_red2);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.content img {
+    width: 100%;
+}
+
